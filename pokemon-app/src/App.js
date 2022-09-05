@@ -12,6 +12,7 @@ const [loadPoke, setLoadPoke] = useState(
 const getAllPokemons = async () => {
 	const res = await fetch(loadPoke);
 	const data = await res.json();
+  console.log(data);
 	setLoadPoke(data.next);
 
 	function createPokemonObject(result) {
@@ -19,7 +20,7 @@ const getAllPokemons = async () => {
 		const res = await fetch(
 		`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
 		);
-    console.log(pokemon.name);
+    // console.log(pokemon.name);
 		const data = await res.json();
 		setAllPokemons((currentList) => [...currentList, data]);
 	});

@@ -10,7 +10,6 @@ name,
 image,
 types,
 key,
-height,
 weight,
 stats,
 }) => {
@@ -18,7 +17,6 @@ const style = `thumb-container ${types[0].type.name}`;
 const [show, setShow] = useState(false);
 const handleClose = () => setShow(false);
 const handleShow = () => setShow(true);
-console.log(stats);
 return (
 	<div className={style}>	
 
@@ -30,10 +28,10 @@ return (
 		size="lg"
 		aria-labelledby="contained-modal-title-vcenter"
 		centered>
-			<Modal.Header closeButton>
+			<Modal.Header closeButton className = {types[0].type.name}>
 				<Modal.Title>{name.toUpperCase()}</Modal.Title>
 			</Modal.Header>
-			<Modal.Body>
+			<Modal.Body className = {types[0].type.name}>
 				<Card>
 					<Card.Img variant="top" src={image} style={{ width: '16rem' }} class="mx-auto d-block"/>
 					<Card.Body>
