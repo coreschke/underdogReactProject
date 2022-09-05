@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 body {
 margin: 0;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
+font-family: 'JetBrains Mono', monospace;
 background-image: linear-gradient(
 	to right,
 	#676767 0%,
@@ -137,43 +139,7 @@ flex-direction: column;
 width: 100%;
 }
 
-.detail-wrapper button {
-color: rgb(22, 22, 22);
-padding: 0.5rem;
-margin-top: 1rem;
-border: none;
-border-radius: 0.2rem;
-cursor: pointer;
-background-color: rgba(0, 0, 0, 0.185);
-}
-
-.load-more {
-border-radius: 6px;
-border: 1px solid #c6c6c6;
-color: #444;
-padding: 0.5rem 1.5rem;
-min-width: 20%;
-margin-top: 1rem;
-}
-
-
-/* .pokeinfo {
-margin: 0 25px;
-font-family: "Satisfy", cursive;
-background-image: linear-gradient(
-	180deg, #2af598 0%, #009efd 100%);
-} */
-
-/* .pokeinfo:hover {
-background-image: linear-gradient(
-	-20deg,
-	#ddd6f3 0%,
-	#faaca8 100%,
-	#faaca8 100%
-);
-} */
-
-h3 {
+h3:hover {
 text-decoration: underline;
 }
 
