@@ -1,0 +1,180 @@
+body {
+margin: 0;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+background-image: linear-gradient(
+	to right,
+	#676767 0%,
+	#3a3a3a 100%
+);
+}
+
+.rock {
+  background-color: #c79081;
+}
+
+.ghost {
+  background-color: #cfd9df;
+}
+
+.electric {
+  background-color: #f9d423;
+}
+
+.bug {
+  background-color: #c5ffa1;
+}
+
+.poison {
+  background-color: #d660df;
+}
+
+.normal {
+  background-color: #e3fdf5;
+}
+
+.fairy {
+  background-color: #fecfef;
+}
+
+.fire {
+  background-color: #ff4907;
+}
+
+.grass {
+  background-color: #35b142;
+}
+
+.water {
+  background-color: #66a6ff;
+}
+
+.ground {
+  background-color: #772f1a;
+}
+
+.app-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 3rem 1rem;
+}
+
+.app-container h1 {
+width: 0ch;
+color: rgb(16, 166, 236);
+overflow: hidden;
+white-space: nowrap;
+animation: text 4s steps(15) infinite alternate;
+}
+
+@keyframes text {
+0% {
+	width: 0ch;
+}
+50% {
+	width: 15ch;
+	color: rgb(218, 55, 5);
+}
+}
+
+.pokemon-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.all-container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.thumb-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1.5rem 0.2rem;
+margin: 0.3rem;
+border: 1px solid #efefef;
+border-radius: 2rem;
+min-width: 160px;
+text-align: center;
+box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+/* .thumb-container :hover {
+margin: 0.7rem 0;
+} */
+
+h3 {
+margin-bottom: 0.2rem;
+}
+
+.thumb-container .number {
+border-radius: 1rem;
+padding: 0.2rem 0.4rem;
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+.thumb-container img {
+width: 120px;
+height: 120px;
+}
+
+.thumb-container small {
+text-transform: capitalize;
+}
+
+.detail-wrapper {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.detail-wrapper button {
+color: rgb(22, 22, 22);
+padding: 0.5rem;
+margin-top: 1rem;
+border: none;
+border-radius: 0.2rem;
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.185);
+}
+
+.load-more {
+border-radius: 6px;
+border: 1px solid #c6c6c6;
+color: #444;
+padding: 0.5rem 1.5rem;
+min-width: 20%;
+margin-top: 1rem;
+}
+
+
+/* .pokeinfo {
+margin: 0 25px;
+font-family: "Satisfy", cursive;
+background-image: linear-gradient(
+	180deg, #2af598 0%, #009efd 100%);
+} */
+
+/* .pokeinfo:hover {
+background-image: linear-gradient(
+	-20deg,
+	#ddd6f3 0%,
+	#faaca8 100%,
+	#faaca8 100%
+);
+} */
+
+h3 {
+text-decoration: underline;
+}
+
+
