@@ -64,24 +64,6 @@ min-height: 100vh;
 padding: 3rem 1rem;
 }
 
-.app-container h1 {
-width: 0ch;
-color: rgb(16, 166, 236);
-overflow: hidden;
-white-space: nowrap;
-animation: text 4s steps(15) infinite alternate;
-}
-
-@keyframes text {
-0% {
-	width: 0ch;
-}
-50% {
-	width: 15ch;
-	color: rgb(218, 55, 5);
-}
-}
-
 .pokemon-container {
 display: flex;
 flex-direction: column;
@@ -89,16 +71,23 @@ align-items: center;
 justify-content: center;
 }
 
+
 .all-container {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-gap: 75px;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-auto-flow: row;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .thumb-container {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 justify-content: center;
 padding: 1.5rem 0.2rem;
@@ -110,10 +99,6 @@ text-align: center;
 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
 }
 
-/* .thumb-container :hover {
-margin: 0.7rem 0;
-} */
-
 h3 {
 margin-bottom: 0.2rem;
 }
@@ -122,15 +107,6 @@ margin-bottom: 0.2rem;
 border-radius: 1rem;
 padding: 0.2rem 0.4rem;
 background-color: rgba(255, 255, 255, 0.3);
-}
-
-.thumb-container img {
-width: 120px;
-height: 120px;
-}
-
-.thumb-container small {
-text-transform: capitalize;
 }
 
 .detail-wrapper {
