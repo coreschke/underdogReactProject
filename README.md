@@ -1,3 +1,5 @@
+In order to run this app, make sure you have node installed on your PC. Afterwards, you can use the npm start command and view the app in your browser as described below.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
